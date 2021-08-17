@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "1634402d-9b0c-46ee-a215-982c8d26ba69",
+		"name": "TuCasita Tasaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "US-0001 - CalculatePropertyArea",
+			"item": [
+				{
+					"name": "Property Area",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"propName\": \"Casa\",\n    \"propLandWidth\": 50.00,\n    \"propLandLength\": 50.00,\n    \"district\": {\n        \"districtName\": \"Puerto Madero\",\n        \"districtBuiltPrice\": 2.00,\n        \"districtUnbuiltPrice\": 1.00\n    },\n    \"rooms\": [\n        {\n            \"roomName\": \"Habitacion\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 5.00\n        },\n        {\n            \"roomName\": \"Cocina\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 10.00\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/property/area",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"property",
+								"area"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "US-0002 - CalculatePropertyValue",
+			"item": [
+				{
+					"name": "Property Value",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"propName\": \"Espacio1\",\n    \"propLandWidth\": 50.00,\n    \"propLandLength\": 50.00,\n    \"district\": {\n        \"districtName\": \"Puerto Madero\",\n        \"districtBuiltPrice\": 2.00,\n        \"districtUnbuiltPrice\": 1.00\n    },\n    \"rooms\": [\n        {\n            \"roomName\": \"Habitacion 1\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 5.00\n        },\n        {\n            \"roomName\": \"Habitacion 2\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 10.00\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/property/value",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"property",
+								"value"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "US-0003 - CalculateBiggestRoom",
+			"item": [
+				{
+					"name": "Biggest Room",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"propName\": \"Espacio1\",\n    \"propLandWidth\": 50.00,\n    \"propLandLength\": 50.00,\n    \"district\": {\n        \"districtName\": \"Puerto Madero\",\n        \"districtBuiltPrice\": 2.00,\n        \"districtUnbuiltPrice\": 1.00\n    },\n    \"rooms\": [\n        {\n            \"roomName\": \"Habitacion 1\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 5.00\n        },\n        {\n            \"roomName\": \"Habitacion 2\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 10.00\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/rooms/biggest",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rooms",
+								"biggest"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "US-0004 - CalculateRoomsArea",
+			"item": [
+				{
+					"name": "Rooms Area",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"propName\": \"Espacio1\",\n    \"propLandWidth\": 50.00,\n    \"propLandLength\": 50.00,\n    \"district\": {\n        \"districtName\": \"Puerto Madero\",\n        \"districtBuiltPrice\": 2.00,\n        \"districtUnbuiltPrice\": 1.00\n    },\n    \"rooms\": [\n        {\n            \"roomName\": \"Habitacion 1\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 5.00\n        },\n        {\n            \"roomName\": \"Habitacion 2\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 10.00\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/rooms/area",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rooms",
+								"area"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Exceptions",
+			"item": [
+				{
+					"name": "MethodArgumentNotValidException",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"propName\": \"casa\",\n    \"propLandWidth\": 50.00,\n    \"propLandLength\": 50.00,\n    \"district\": {\n        \"districtName\": \"puerto Madero\",\n        \"districtBuiltPrice\": 2.00,\n        \"districtUnbuiltPrice\": 1.00\n    },\n    \"rooms\": [\n        {\n            \"roomName\": \"Habitacion\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 500.00\n        },\n        {\n            \"roomName\": \"Cocina\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 1000.00\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/property/area",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"property",
+								"area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HttpMessageNotReadableException",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/property/area",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"property",
+								"area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WrongRoomsSizeException",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"propName\": \"Casa\",\n    \"propLandWidth\": 5.00,\n    \"propLandLength\": 5.00,\n    \"district\": {\n        \"districtName\": \"Puerto Madero\",\n        \"districtBuiltPrice\": 2.00,\n        \"districtUnbuiltPrice\": 1.00\n    },\n    \"rooms\": [\n        {\n            \"roomName\": \"Habitacion\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 5.00\n        },\n        {\n            \"roomName\": \"Cocina\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 10.00\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/property/area",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"property",
+								"area"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NoSuchDistrictException",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"propName\": \"Casa\",\n    \"propLandWidth\": 50.00,\n    \"propLandLength\": 50.00,\n    \"district\": {\n        \"districtName\": \"Caseros\",\n        \"districtBuiltPrice\": 2.00,\n        \"districtUnbuiltPrice\": 1.00\n    },\n    \"rooms\": [\n        {\n            \"roomName\": \"Habitacion\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 5.00\n        },\n        {\n            \"roomName\": \"Cocina\",\n            \"roomWidth\": 10.00,\n            \"roomLength\": 10.00\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/property/area",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"property",
+								"area"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Functions",
+			"item": [
+				{
+					"name": "Get Districts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/districts",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"districts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "localhost:8080"
+		}
+	]
+}
