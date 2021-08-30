@@ -1,0 +1,5 @@
+
+Z	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(“‚©@
+`	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(é‘Þ¦úÿÿÿÿ
+b	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“‚©@
+h	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é‘Þ¦úÿÿÿÿ

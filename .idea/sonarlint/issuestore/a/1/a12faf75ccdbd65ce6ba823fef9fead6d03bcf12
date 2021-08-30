@@ -1,0 +1,13 @@
+
+[	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(½´ÀÇ
+[	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(Žëè·
+[	java:S112P"FDefine and throw a dedicated exception instead of using a generic one.(¹ ‰Ô
+`	java:S112]"FDefine and throw a dedicated exception instead of using a generic one.(žýõ¤ÿÿÿÿÿ
+^
+java:S2166"CRename this class to remove "Exception" or correct its inheritance.(ˆžôüÿÿÿÿ
+c	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½´ÀÇ
+c	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Žëè·
+c	java:S100P"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ ‰Ô
+h	java:S100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(žýõ¤ÿÿÿÿÿ
+e
+java:S1192/"ODefine a constant instead of duplicating this literal "/property/area" 4 times.(­ÅÅ¿

@@ -1,0 +1,4 @@
+Ejercicio 2:
+a) La primary key de la tabla empleados es "idEmpleado", ya que es el identificador de cada empleado.
+b) La primary key de la tabla departamentos es "idDepto", ya que es el identificador de cada departamento.
+c) La relacion entre ambas tablas es el departamento al que pertenece cada empleado. La foreign key "idDepto" debe estar en la tabla Empleado, ya que hace referencia a la primary key "idDepto" de la tabla Departamento, indicando a que departamento pertenece ese empleado.

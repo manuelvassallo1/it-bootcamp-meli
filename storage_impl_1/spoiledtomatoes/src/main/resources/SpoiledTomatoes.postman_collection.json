@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "b49de69e-56cb-4770-907b-b782551ee64a",
+		"name": "SpoiledTomatoes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Actor",
+			"item": [
+				{
+					"name": "GetAll By Favorite Movie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/{{api}}/actors/getAll/favoriteMovie",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"{{api}}",
+								"actors",
+								"getAll",
+								"favoriteMovie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll By Greater Rating",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/{{api}}/actors/greaterRating/7.0",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"{{api}}",
+								"actors",
+								"greaterRating",
+								"7.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll By Movie Title",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/{{api}}/actors//movie/Harry Potter",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"{{api}}",
+								"actors",
+								"",
+								"movie",
+								"Harry Potter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "GetAll By Actor Greater Rating",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/{{api}}/movies/greaterActorRating/7.0",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"{{api}}",
+								"movies",
+								"greaterActorRating",
+								"7.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll By Genre Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/{{api}}/movies/genre/drama",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"{{api}}",
+								"movies",
+								"genre",
+								"drama"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Serie",
+			"item": [
+				{
+					"name": "GetAll By Greater Seasons Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/{{api}}/series/greaterSeasonsCount/2",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"{{api}}",
+								"series",
+								"greaterSeasonsCount",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Episode",
+			"item": [
+				{
+					"name": "GetAll By Actor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/{{api}}/episodes/actor/kit/har",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"{{api}}",
+								"episodes",
+								"actor",
+								"kit",
+								"har"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Season",
+			"item": [
+				{
+					"name": "GetAll By Genre Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/{{api}}/seasons/genre/drama",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"{{api}}",
+								"seasons",
+								"genre",
+								"drama"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "localhost:8080"
+		},
+		{
+			"key": "api",
+			"value": "spoiledtomatoes"
+		}
+	]
+}

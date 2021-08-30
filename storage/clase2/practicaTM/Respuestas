@@ -1,0 +1,14 @@
+1) Se denomina JOIN a la accion de combinar 2 tablas y obtener datos a partir de condiciones en comun.
+
+2) INNER JOIN: Se utiliza para obtener datos de 2 tablas siempre y cuando la condicion que se indique se cumpla en ambas tablas.
+
+LEFT JOIN: Se utiliza para obtener todos los datos de la tabla A y todos los que coincidan entre la tabla A y B segun la condicion que se indique.
+
+3) El GROUP BY se utiliza para agrupar las filas resultantes de la query segun el campo que se indique.
+
+4) HAVING se utiliza para filtrar los resultados del agrupamiento que se haya hecho anteriormente con el GROUP BY.
+
+5) INNER JOIN y LEFT JOIN.
+
+6) SELECT * FROM A a RIGHT JOIN B b ON a.key = b.key;
+	SELECT * FROM A a FULL OUTER JOIN B b ON a.key = b.key;
